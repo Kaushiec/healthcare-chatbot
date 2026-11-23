@@ -1,0 +1,527 @@
+:root {
+    --green: #1a9c6b;
+    --green-dark: #158056;
+    --text-dark: #1f2937;
+    --text-gray: #6b7280;
+    --border: #e5e7eb;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-dark);
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: #ffffff;
+  }
+
+  .logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .logo-text span {
+    color: var(--green);
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 15px;
+  }
+
+  .login-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .login-btn svg {
+    width: 16px;
+    height: 16px;
+    stroke: #ffffff;
+  }
+
+  /* Main content */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero-icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #b9e3ce;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .hero-icon svg {
+    width: 36px;
+    height: 36px;
+    stroke: var(--green);
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  h1 span {
+    color: var(--green);
+  }
+
+  .subtitle {
+    margin-top: 14px;
+    color: var(--text-gray);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 620px;
+    margin-top: 36px;
+    padding: 10px 12px 10px 20px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  }
+
+  .search-box svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--text-gray);
+    flex-shrink: 0;
+  }
+
+  .search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: var(--text-dark);
+    background: transparent;
+  }
+
+  .search-box input::placeholder {
+    color: #9ca3af;
+  }
+
+  .send-btn {
+    width: 42px;
+    height: 42px;
+    background: var(--green);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .send-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: #ffffff;
+    fill: none;
+  }
+
+  .try-asking {
+    margin-top: 40px;
+    color: var(--text-gray);
+    font-size: 14px;
+  }
+
+  .suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    max-width: 800px;
+  }
+
+  .suggestion-chip {
+    padding: 10px 18px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #ffffff;
+    color: var(--text-dark);
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .suggestion-chip:hover {
+    border-color: var(--green);
+    background: #f2fbf6;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #9ca3af;
+    font-size: 14px;
+  }
+
+  @media (max-width: 640px) {
+    header {
+      padding: 14px 20px;
+    }
+    nav {
+      display: none;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    .search-box {
+      padding: 8px 8px 8px 16px;
+    }
+  }
+
+/* Added styles for the real conversation history. */
+.chat-messages {
+  display: none;
+  width: 100%;
+  max-width: 620px;
+  margin-top: 30px;
+  max-height: 340px;
+  overflow-y: auto;
+  text-align: left;
+  padding: 4px 8px;
+}
+.chat-messages:not(:empty) { display: block; }
+.message {
+  max-width: 85%;
+  width: fit-content;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin: 10px 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+.user-message {
+  background: #e9f7f1;
+  margin-left: auto;
+}
+.bot-message {
+  background: #f4f6f8;
+  margin-right: auto;
+}
+.send-btn:disabled { cursor: not-allowed; opacity: 0.55; }
+.search-box:focus-within { border-color: var(--green); }
+.location-btn {
+  margin-top: 28px;
+  padding: 10px 16px;
+  border: 1px solid var(--green);
+  background: white;
+  color: var(--green-dark);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.location-btn:hover { background: #f2fbf6; }
+#locationStatus { margin-top: 10px; color: var(--text-gray); font-size: 13px; }
+@media (max-width: 640px) {
+  .message { max-width: 96%; }
+  .chat-messages { max-height: 300px; }
+}
+
+/* ========================================
+   HEALTHCARE SEARCH RESULT CARDS
+   Step 25C
+   ======================================== */
+
+/* Give assistant messages containing cards more room. */
+.bot-message.with-results {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+}
+
+/* Container holding the result cards. */
+.healthcare-results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-top: 16px;
+  padding-top: 14px;
+
+  border-top: 1px solid var(--border);
+  white-space: normal;
+}
+
+/* Small heading above the cards. */
+.healthcare-results-heading {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-gray);
+  margin: 0 0 2px;
+}
+
+/* Individual hospital/doctor/service card. */
+.healthcare-result-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  padding: 14px 16px;
+  width: 100%;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.025);
+}
+
+/* Card title. */
+.healthcare-result-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--green-dark);
+
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+/* Individual information rows. */
+.healthcare-result-card p {
+  font-size: 13px;
+  line-height: 1.5;
+
+  margin: 5px 0;
+  color: var(--text-dark);
+  overflow-wrap: anywhere;
+}
+
+/* Labels such as City, Phone and Department. */
+.healthcare-result-card strong {
+  font-weight: 600;
+  color: var(--text-gray);
+}
+
+/* Small warning for price information. */
+.healthcare-result-card .healthcare-price-note {
+  margin-top: 12px;
+  padding-top: 8px;
+
+  border-top: 1px solid var(--border);
+
+  color: var(--text-gray);
+  font-size: 12px;
+}
+
+/* Message shown when there are more than 10 results. */
+.healthcare-results-more {
+  color: var(--text-gray);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* Keep cards readable on smaller screens. */
+@media (max-width: 640px) {
+  .bot-message.with-results {
+    max-width: 100%;
+  }
+
+  .healthcare-result-card {
+    padding: 12px;
+  }
+
+  .healthcare-result-card h3 {
+    font-size: 14px;
+  }
+}
+
+/* =======================================
+   COMPACT HEALTHCARE FOOTER
+   ======================================= */
+
+.site-footer {
+  width: 100%;
+  padding: 24px 20px 28px;
+
+  border-top: 1px solid var(--border);
+
+  background: #ffffff;
+  text-align: center;
+}
+
+.site-footer .healthcare-disclaimer {
+  display: block;
+
+  width: 100%;
+  max-width: 660px;
+
+  margin: 0 auto 14px;
+  padding: 0;
+
+  color: var(--text-gray);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.site-footer .footer-copyright {
+  margin: 0;
+
+  color: #9ca3af;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    padding: 20px 18px 24px;
+  }
+
+  .site-footer .healthcare-disclaimer {
+    max-width: 100%;
+    font-size: 11px;
+    line-height: 1.65;
+  }
+}
+
+
+/* NEW CHAT - TOP RIGHT HEADER BUTTON */
+
+header #newChatBtn {
+    appearance: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: auto;
+    min-height: 42px;
+    padding: 10px 16px;
+
+    background-color: #158056;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    white-space: nowrap;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    transition: background 0.2s ease;
+}
+
+header #newChatBtn svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    max-width: 18px;
+    min-height: 18px;
+    max-height: 18px;
+
+    flex: 0 0 18px;
+
+    fill: none;
+    stroke: currentColor;
+}
+
+header #newChatBtn span {
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+header #newChatBtn:hover {
+    background-color: #116b4a;
+}
+
+header #newChatBtn:focus-visible {
+    outline: 3px solid #b9e3ce;
+    outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+    header #newChatBtn {
+        padding: 9px 12px;
+        gap: 6px;
+        font-size: 12px;
+    }
+}
+
+

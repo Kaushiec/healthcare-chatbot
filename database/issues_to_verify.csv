@@ -1,0 +1,32 @@
+﻿hospital,source_document,page,issue_type,description
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,5,tariff_ambiguity,Total Iron Binding Capacity (alternate entry): original fee ₹650; verify wording/alternative listing/asterisk.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,5,tariff_ambiguity,"PCOD Panel (alternate entry): original fee ₹4,200; verify wording/alternative listing/asterisk."
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,5,tariff_ambiguity,"ANA (additional board entry): original fee ₹3,100; verify wording/alternative listing/asterisk."
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,6,tariff_ambiguity,BT (alternate entry): original fee ₹50; verify wording/alternative listing/asterisk.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,7,tariff_ambiguity,Urine Microalbumin (alternate listing): original fee ₹700; verify wording/alternative listing/asterisk.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,8,tariff_ambiguity,X-ray Lopa Perfolim (wording unclear): original fee ₹1500*; verify wording/alternative listing/asterisk.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,9,tariff_ambiguity,X-ray Scapula Region AP & Lateral: original fee ₹1200*; verify wording/alternative listing/asterisk.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,9,tariff_ambiguity,X-ray Scapula Region AP: original fee ₹550*; verify wording/alternative listing/asterisk.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,9,tariff_ambiguity,X-ray Scapula Region Lateral: original fee ₹600*; verify wording/alternative listing/asterisk.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,9,tariff_ambiguity,X-ray Shoulder AP & Lateral (Left): original fee ₹300*; verify wording/alternative listing/asterisk.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,9,tariff_ambiguity,X-ray Shoulder AP & Lateral (Right): original fee ₹250*; verify wording/alternative listing/asterisk.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,10,tariff_ambiguity,"Increased USG Scrotum (wording unclear): original fee ₹1,000; verify wording/alternative listing/asterisk."
+Nilachal Hospital & Research Centre,Nilachal Hospital & Research centre.pdf,2,missing_fee,Serum torch has no fee printed; keep NULL.
+Nilachal Hospital & Research Centre,Nilachal Hospital & Research centre.pdf,2,missing_fee,Anti DS DNA has no fee printed; keep NULL.
+Aie afa Medlife BM Hospital,Aie afa Medlife BM Hospital (1).pdf,2,missing_fee,Advanced Ortho Surgery has no fee printed; keep NULL.
+Aie afa Medlife BM Hospital,Aie afa Medlife BM Hospital (1).pdf,2,missing_fee,EEG has no fee printed; keep NULL.
+Aie afa Medlife BM Hospital,Aie afa Medlife BM Hospital (1).pdf,2,missing_fee,Double volume exchange transfusion (neonatal process) has no fee printed; keep NULL.
+MRM Memorial Hospital,MRM Doctors_list & info..pdf,2,department_mismatch,Dr. Mridul Mahanta is under Anesthesia but the printed qualification contains DM(Cadiology); preserve source and verify.
+MRM Memorial Hospital,MRM Services_and_Charges F1.docx.pdf,10,tariff_ambiguity,MRM Deluxe Cabin ₹1000–1400/day is below Semi-Deluxe Cabin ₹1800/day in the provided transcription; verify price labels and rates.
+Aie afa Medlife BM Hospital,Aie afa Medlife BM Hospital (1).pdf,2,accommodation_period,The PDF gives ward/ICU/cabin figures but not explicitly the billing period; user states nightly rates. Confirm with hospital.
+Aie afa Medlife BM Hospital,Aie afa Medlife BM Hospital (1).pdf,2,room_count_mapping,"Aie Afa reports Single=3, Double=2, VIP=3 cabins; mapping to Independent, Sharing and VIP tariffs requires verification."
+Aie afa Medlife BM Hospital,Aie afa Medlife BM Hospital (1).pdf,1,provider_availability,"On Call in Psychiatry, Urology and Dental is not a named doctor or a guarantee of immediate service."
+Nilachal Hospital & Research Centre,Nilachal Hospital & Research centre.pdf,1,unclear_facility,Nilachal facility entry OPD 15: meaning of number 15 is unclear. Do not treat as bed count.
+Nilachal Hospital & Research Centre,Nilachal Hospital & Research centre.pdf,2,bed_capacity_range,Nilachal total capacity is reported as 80–100; do not turn it into an exact bed count or current vacancies.
+Nilachal Hospital & Research Centre,Nilachal Hospital & Research centre.pdf,2,transcription_ambiguity,"Serum liquizyme lipase: preserve original wording, verify test name with hospital."
+Nilachal Hospital & Research Centre,Nilachal Hospital & Research centre.pdf,4,transcription_ambiguity,Lumber Spine AP/Lat: original wording preserved; verify whether lumbar intended.
+Aie afa Medlife BM Hospital,Aie afa Medlife BM Hospital (1).pdf,,address_missing,Full street address and coordinates not present in uploaded Aie Afa PDF.
+Nilachal Hospital & Research Centre,Nilachal Hospital & Research centre.pdf,,address_missing,Full street address and coordinates not present in uploaded Nilachal PDF.
+MRM Memorial Hospital,MRM Doctors_list & info..pdf,,data_freshness,Collection or tariff validity date not given; all last_verified values left NULL.
+Aie afa Medlife BM Hospital,Aie afa Medlife BM Hospital (1).pdf,,data_freshness,Collection or tariff validity date not given; all last_verified values left NULL.
+Nilachal Hospital & Research Centre,Nilachal Hospital & Research centre.pdf,,data_freshness,Collection or tariff validity date not given; all last_verified values left NULL.
